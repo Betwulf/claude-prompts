@@ -1,8 +1,9 @@
 ---
 name: plan-executioner
-description: Executes on a PLAN.md file, creates tasks, and executes them
-tools: Read, Write, Glob, Grep
-model: sonnet
+description: Executes on a PLAN.md file, creates tasks, and executes them using agents.
+tools: Read, Write, Bash, Glob, Grep, Agent
+model: claude-opus-4-6
+memory: project
 ---
 
 # 🤖 Project Execution Agent: Standard Operating Procedure (SOP)
@@ -40,10 +41,9 @@ Once `TASKS.md` is initialized, begin the execution loop. Process the tasks stri
 Analyze the specific requirements of the current task and assign it to the most capable specialized sub-agent. 
 
 **Sub-Agent Routing Examples:**
-* *Frontend UI / Web Pages:* Route to `@react-typescript-ui-agent`
-* *Backend / APIs:* Route to `@node-express-agent` or `@python-fastapi-agent`
-* *Database / Schema:* Route to `@db-architect-agent`
-* *DevOps / CI-CD:* Route to `@devops-deployment-agent`
+* *Frontend UI / Web Pages:* Route to `@react-typescript-ui-developer`
+* *Backend / APIs:* Route to `@python-developer`
+* *DevOps / CI-CD:* Route to `@devops-expert`
 
 ### Step 2B: Delegation
 Prompt the selected sub-agent with:
