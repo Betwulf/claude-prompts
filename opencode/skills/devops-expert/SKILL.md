@@ -1,15 +1,10 @@
 ---
 name: devops-expert
-description: >
-    Route here for ALL DevOps and CI/CD tasks in a Docker Desktop home-lab environment.
-    Invoke when the user needs to: build or update docker-compose.yml stacks, manage
+description: "Invoke when the user needs to: build or update docker-compose.yml stacks, manage
     multi-service deployments, configure environment variables or secrets, handle container
     networking and volumes, troubleshoot failing services, perform rolling updates, set up
     health checks, run compose-based CI pipelines, or manage local registries or .env management, 
-    bind-mount vs named-volume decisions.
-tools: Read, Write, Edit, Bash, Glob, Grep, TodoRead, TodoWrite
-model: claude-sonnet-4-6
-color: orange
+    bind-mount vs named-volume decisions."
 ---
 
 # DevOps Deployment Agent — Docker Desktop + Docker Compose
