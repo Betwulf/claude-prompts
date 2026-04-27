@@ -12,7 +12,6 @@ tools:
   read: true
   grep: true
   glob: true
-  grep: true
   skill: true
   todowrite: true
   webfetch: true
